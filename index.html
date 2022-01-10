@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formateador de texto con espacios</title>
+    <link rel="stylesheet" href="./Styles/normalize.css">
+    <link rel="stylesheet" href="./Styles/styles.css">
+</head>
+
+<body>
+    <main>
+        <section class="info">
+            <h1 class="info__title">Saltos de linea</h1>
+            <p class="info__desc">
+                Esta herramienta se encarga de sustituir los saltos de lineas por "\n" dejando un texto de multiples
+                lineas a solo una pero conservando los saltos
+            </p>
+        </section>
+        <section class="conversor">
+            <div class="conversor__input">
+                <h2 class="conversor__title">Entrada:</h2>
+                <textarea class="conversor__input__text" id="txtBox" name="txtname" rows="25" cols="80"></textarea>
+                <input class="conversor__input__fireButton" value="Convertir" type="button" id="sendButton" onclick="getText()">
+            </div>
+            <div class="conversor__result">
+                <h2  class="conversor__title">Resultado:</h2>
+                <div class="conversor__result__container">
+                    <textarea class="conversor__result__text" name="resutBox" id="output" cols="65" rows="1"></textarea>
+                    <button class="conversor__result__copy_button" onclick="copyText()">
+                        <img src="https://img.icons8.com/ios/344/copy.png">
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Dessarrollado por: <a href="#">Manuel Peñaloza</a></p>
+    </footer>
+    <script src="./src/index.js"></script>
+</body>
+
+</html>

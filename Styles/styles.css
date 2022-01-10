@@ -1,0 +1,86 @@
+html {
+    font-size: 62.5%;
+    color: var(--dark-color);
+}
+
+:root {
+    /* colors: */
+    --clear-color: #FDFDFF;
+    --dark-color: #393D3F;
+
+    --primary-action-color: #6ce480;
+    --Active-action-color: #60ce72;
+}
+
+body {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+    font-family: monospace;
+}
+
+main {
+    box-sizing: border-box;
+    width: 800px;
+    padding: 20px 42px;
+    height: fit-content;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 15px;
+}
+
+.conversor__input__text {
+    width: 99%;
+}
+
+.conversor__input__fireButton {
+    height: 45px;
+    background-color: var(--primary-action-color);
+    -webkit-appearance: none;
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.conversor__input__fireButton:active {
+    background-color: var(--Active-action-color);
+    transform: scale(0.95);
+}
+
+.conversor__result__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.conversor__result__text {
+    width: 92%;
+}
+
+.conversor__result__copy_button {
+    width: 40px;
+    height: 40px;
+    display: flex-inline;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.conversor__result__copy_button img {
+    width: 100%;
+}
+
+footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: var(--dark-color);
+    color: var(--clear-color);
+    width: 100%;
+}
+
+footer a {
+    color: var(--secundary-action-color);
+}
